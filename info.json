@@ -1,9 +1,9 @@
 {
   "name": "my-better-robots-config",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "title": "My Better Robots Config",
   "author": "Maximilian",
   "factorio_version": "2.0",
-  "description": "Easy changeable robot and roboports settings. \n - Roboports Charging Number and Radius Places \n - Worker and Logic Robots Flying Speed \n - Worker and Logic Robots Energy Capacity (for longer Flying Time)",
+  "description": "Easy changeable robot and roboports settings. \n - Changeable Roboports Charging Number and Radius Places \n - Changeable Worker and Logic Robots Flying Speed \n - Changeable Worker and Logic Robots Energy Capacity (for longer Flying Time) \n - Change Logic Chest Raduis to Roboports Construction Raduis (But Roboports connection Raduis is Normal)",
   "dependencies": ["base >= 2.0.0"]
 }

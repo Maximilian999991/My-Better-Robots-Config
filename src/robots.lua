@@ -1,7 +1,7 @@
 -- src/robots.lua
 
 local function apply_robot_settings()
-  local speed_value = settings.global["fast-worker-robot-speed"] and settings.global["fast-worker-robot-speed"].value or 5.0
+  local speed_value = settings.global["fast-worker-robot-speed"] and settings.global["fast-worker-robot-speed"].value or 2.0
   local battery_modifier = settings.global["worker-robot-battery-modifier"] and settings.global["worker-robot-battery-modifier"].value or 4.0
 
   speed_value = (speed_value / 0.05) - 1
@@ -30,7 +30,7 @@ script.on_event(defines.events.on_runtime_mod_setting_changed, function(event)
 end)
 
 script.on_event(defines.events.on_force_created, function(event)
-  local speed_value = settings.global["fast-worker-robot-speed"] and settings.global["fast-worker-robot-speed"].value or 5.0
+  local speed_value = settings.global["fast-worker-robot-speed"] and settings.global["fast-worker-robot-speed"].value or 2.0
   local battery_modifier = settings.global["worker-robot-battery-modifier"] and settings.global["worker-robot-battery-modifier"].value or 4.0
 
   speed_value = (speed_value / 0.05) - 1

@@ -3,7 +3,7 @@ data:extend({
     type = "double-setting",
     name = "fast-worker-robot-speed",
     setting_type = "runtime-global",
-    default_value = 5.0,
+    default_value = 2.0,
     minimum_value = 0.05,
     maximum_value = 1000.0,
     order = "a[robot]-a[speed]"

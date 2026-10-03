@@ -2,7 +2,7 @@
 set -e
 
 NAME="my-better-robots-config"
-VERSION="1.0.0"
+VERSION="2.0.0"
 FOLDER="${NAME}_${VERSION}"
 
 ZIP_NAME="${PWD}/${NAME}_${VERSION}.zip"

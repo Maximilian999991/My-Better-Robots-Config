@@ -1,5 +1,16 @@
 -- src/roboports.lua
 
+if data.raw.roboport then
+  for _, roboport in pairs(data.raw.roboport) do
+    if roboport.construction_radius and roboport.construction_radius > 0 then
+      roboport.logistics_radius = roboport.construction_radius
+      if roboport.logistics_connection_distance and roboport.logistics_connection_distance < roboport.logistics_radius then
+        roboport.logistics_connection_distance = roboport.logistics_radius
+      end
+    end
+  end
+end
+
 if data.raw.roboport and data.raw.roboport.roboport then
   local roboport = data.raw.roboport.roboport
 
